@@ -3,12 +3,18 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
 
-        <h1>Disciplinas de montaña</h1>
+        <h1 id="titulo">Disciplinas de montaña</h1>
         
     </head>
     
     <body>
+        <div id="botones" class="boton" onmouseover="color()" onmouseout="colororig()">
+            <button onclick="fxnboton()">Esconder</button>
+            <button onclick="cambiar()">Cambiar</button>
+        </div>
 
         <div>
 
@@ -24,7 +30,7 @@
 
         </div>
 
-        <div>
+        <div id="trekking">
             <h2>Trekking</h2>
             <img src="trek.png" width="300" height="300">
            
